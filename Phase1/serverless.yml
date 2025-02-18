@@ -1,0 +1,44 @@
+org: nscc123 # The Serverless org ID (org in the Serverless Framework)
+service: Phase1 # The service name (project name)
+
+provider:
+  name: aws # Provider is AWS
+  runtime: nodejs20.x # Runtime environment for Lambda functions
+  environment:
+    MONGODB_URI: mongodb+srv://anandtamanna9:wgLz8akLFmxyqpBw@cluster0.xuga9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+functions:
+  create:
+    handler: createItemFunction/index.handler # Path to 'create' function handler
+    events:
+      - httpApi: # Define HTTP API event for the 'create' function
+          path: /create
+          method: post
+
+  delete:
+    handler: deleteItemFunction/index.handler # Path to 'delete' function handler
+    events:
+      - httpApi: # Define HTTP API event for the 'delete' function
+          path: /delete
+          method: delete
+
+  getAll:
+    handler: getAllItemsFunction/index.handler # Path to 'getAll' function handler
+    events:
+      - httpApi: # Define HTTP API event for the 'getAll' function
+          path: /get
+          method: get
+
+  getOne:
+    handler: getOneItemFunction/index.handler # Path to 'getOne' function handler
+    events:
+      - httpApi: # Define HTTP API event for the 'getOne' function
+          path: /getOne
+          method: get
+
+  update:
+    handler: updateItemFunction/index.handler # Path to 'update' function handler
+    events:
+      - httpApi: # Define HTTP API event for the 'update' function
+          path: /update
+          method: patch
