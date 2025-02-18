@@ -9,6 +9,7 @@ const Movies = () => {
             const response = await fetch('https://36sjcqdtk5.execute-api.us-east-1.amazonaws.com/get')
             return response.json()
         },
+        staleTime: Infinity
     })
 
     if (error) return <div>{`An error has occurred: + ${error.message}`}</div>

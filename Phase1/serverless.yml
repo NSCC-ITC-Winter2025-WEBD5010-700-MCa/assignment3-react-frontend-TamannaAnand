@@ -6,6 +6,17 @@ provider:
   runtime: nodejs20.x # Runtime environment for Lambda functions
   environment:
     MONGODB_URI: mongodb+srv://anandtamanna9:wgLz8akLFmxyqpBw@cluster0.xuga9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+  httpApi:
+    cors:
+      allowedOrigins:
+        - http://localhost:5173
+      allowedMethods:
+        - GET
+        - POST
+        - DELETE
+        - PATCH
+      allowedHeaders:
+        - Content-Type
 
 functions:
   create:
