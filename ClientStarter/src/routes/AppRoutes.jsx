@@ -7,6 +7,7 @@ import AutoResponse from '../pages/AutoResponse';
 import Customers from '../pages/Customers';
 import Subscriptions from '../pages/Subscriptions';
 import Movies from '../pages/Movies';
+import MovieCreate from '../components/movies/MovieCreate'
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,12 @@ const router = createBrowserRouter([
       {
         path: 'movies',
         element: <Movies />,
+        children: [
+          {
+            path:'create',
+            element: <MovieCreate />
+          }
+        ]
       },
     ],
   },
