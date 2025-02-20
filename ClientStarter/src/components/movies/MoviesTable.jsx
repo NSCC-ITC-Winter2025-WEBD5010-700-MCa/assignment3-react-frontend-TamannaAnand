@@ -1,10 +1,11 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 
 const MoviesTable = ({ movies }) => {
 
     const queryClient = useQueryClient()
+    const navigate = useNavigate()
     
   
         const deleteMovieMutation = useMutation({
@@ -16,6 +17,7 @@ const MoviesTable = ({ movies }) => {
             },
             onSuccess: () => {
                 queryClient.invalidateQueries(['moviesData'])
+                navigate('/admin/movies')
             }
         })
         //send delete request to API to delete selected record 
@@ -51,7 +53,7 @@ const MoviesTable = ({ movies }) => {
                                     <td className="border border-gray-300 px-4 py-2">{movie.title}</td>
                                     <td className="border border-gray-300 px-4 py-2">{movie.director}</td>
                                     <td className="border border-gray-300 px-4 py-2">{movie.release_year}</td>
-                                    <td className="border border-gray-300 px-4 py-2"> {movie.genre?.join(', ') || 'N/A'}</td>
+                                    <td className="border border-gray-300 px-4 py-2"> {Array.isArray(movie.genre) ? movie.genre.join(', ') : movie.genre || 'N/A'}</td>
                                     <td className="border border-gray-300 px-4 py-2 text-center space-x-1">
                                         <button className="bg-green-500 text-white px-2 py-1 text-sm rounded hover:bg-green-600">Details</button>
                                         <button className="bg-blue-500 text-white px-2 py-1 text-sm rounded hover:bg-blue-600">Edit</button>
