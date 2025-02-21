@@ -65,7 +65,7 @@ export const handler = async (event) => {
 
         // Update the document
         const result = await collection.updateOne(
-            { _id: new ObjectId(id) },
+            { _id: new ObjectId(`${id}`) },
             { $set: filteredUpdateData }
         );
 
