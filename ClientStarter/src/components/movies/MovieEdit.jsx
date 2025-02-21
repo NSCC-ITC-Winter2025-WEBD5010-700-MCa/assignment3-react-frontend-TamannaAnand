@@ -49,7 +49,6 @@ const MovieEdit = () => {
     })
 
     const collectData = (formData) => {
-        console.log(errors)
         editMovieMutation.mutate(formData)
     }
 
