@@ -8,6 +8,7 @@ import Customers from '../pages/Customers';
 import Subscriptions from '../pages/Subscriptions';
 import Movies from '../pages/Movies';
 import MovieCreate from '../components/movies/MovieCreate'
+import MovieEdit from '../components/movies/MovieEdit';
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
           {
             path:'create',
             element: <MovieCreate />
+          },
+          {
+            path:':id/edit',
+            element: <MovieEdit />
           }
         ]
       },

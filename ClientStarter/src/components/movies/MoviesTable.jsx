@@ -6,29 +6,33 @@ const MoviesTable = ({ movies }) => {
 
     const queryClient = useQueryClient()
     const navigate = useNavigate()
-    
-  
-        const deleteMovieMutation = useMutation({
-            mutationFn: async (movieId) => {
-                const response = await fetch(`https://36sjcqdtk5.execute-api.us-east-1.amazonaws.com/delete?id=${movieId}`, {
-                    method: 'DELETE'
-                })
-                return response.json()
-            },
-            onSuccess: () => {
-                queryClient.invalidateQueries(['moviesData'])
-                navigate('/admin/movies')
-            }
-        })
-        //send delete request to API to delete selected record 
 
-        const handleDelete = (movieId) => {
-            if(window.confirm(`Are you sure you wish to delete record ${movieId}`)) {
-                deleteMovieMutation.mutate(movieId)
-                console.log(movieId)
-            }
+
+    const deleteMovieMutation = useMutation({
+        mutationFn: async (movieId) => {
+            const response = await fetch(`https://36sjcqdtk5.execute-api.us-east-1.amazonaws.com/delete?id=${movieId}`, {
+                method: 'DELETE'
+            })
+            return response.json()
+        },
+        onSuccess: () => {
+            queryClient.invalidateQueries(['moviesData'])
+            navigate('/admin/movies')
         }
-    
+    })
+    //send delete request to API to delete selected record 
+
+    const handleDelete = (movieId) => {
+        if (window.confirm(`Are you sure you wish to delete record ${movieId}`)) {
+            deleteMovieMutation.mutate(movieId)
+            console.log(movieId)
+        }
+    }
+
+    const handleEdit = (movieId) => {
+        navigate(`/admin/movies/${movieId}/edit`)
+    }
+
 
     return (
         <>
@@ -56,7 +60,7 @@ const MoviesTable = ({ movies }) => {
                                     <td className="border border-gray-300 px-4 py-2"> {Array.isArray(movie.genre) ? movie.genre.join(', ') : movie.genre || 'N/A'}</td>
                                     <td className="border border-gray-300 px-4 py-2 text-center space-x-1">
                                         <button className="bg-green-500 text-white px-2 py-1 text-sm rounded hover:bg-green-600">Details</button>
-                                        <button className="bg-blue-500 text-white px-2 py-1 text-sm rounded hover:bg-blue-600">Edit</button>
+                                        <button onClick={() => { handleEdit(movie._id) }} className="bg-blue-500 text-white px-2 py-1 text-sm rounded hover:bg-blue-600">Edit</button>
                                         <button onClick={() => { handleDelete(movie._id) }} className="bg-red-500 text-white px-2 py-1 text-sm rounded hover:bg-red-600">Delete</button>
                                     </td>
                                 </tr>

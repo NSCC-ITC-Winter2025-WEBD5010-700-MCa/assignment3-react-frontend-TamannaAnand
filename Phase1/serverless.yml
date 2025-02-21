@@ -15,8 +15,9 @@ provider:
         - POST
         - DELETE
         - PATCH
+        - OPTIONS
       allowedHeaders:
-        - Content-Type
+        - '*'
 
 functions:
   create:
@@ -53,3 +54,6 @@ functions:
       - httpApi: # Define HTTP API event for the 'update' function
           path: /update
           method: patch
+      - httpApi:  # ✅ Explicitly define OPTIONS for CORS preflight
+          path: /update
+          method: options
