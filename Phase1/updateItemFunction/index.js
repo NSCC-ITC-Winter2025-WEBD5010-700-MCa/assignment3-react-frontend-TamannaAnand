@@ -4,15 +4,18 @@ import { patchAnime } from "../ValidationModel/model.js";
 
 export const handler = async (event) => {
 
+    const headers = {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PATCH, DELETE, OPTIONS",  // Make sure PATCH is included here
+        "Access-Control-Allow-Headers": "Content-Type",  // Allow headers for content-type
+    }
+
+
     // Handle OPTIONS request for CORS preflight
     if (event.requestContext.http.method === 'OPTIONS') {
         return {
             statusCode: 200,
-            headers: {
-                "Access-Control-Allow-Origin": "*", 
-                "Access-Control-Allow-Methods": "GET, POST, PATCH, DELETE, OPTIONS",  // Make sure PATCH is included here
-                "Access-Control-Allow-Headers": "Content-Type",  // Allow headers for content-type
-            },
+            headers,
             body: JSON.stringify({ message: "CORS preflight successful" }),
         };
     }
@@ -71,11 +74,7 @@ export const handler = async (event) => {
 
         const response = {
             statusCode: 200,
-            headers: {
-                "Access-Control-Allow-Origin": "*",  // Same origin for CORS
-                "Access-Control-Allow-Methods": "GET, POST, PATCH, DELETE, OPTIONS",
-                "Access-Control-Allow-Headers": "Content-Type",  // Allowing Content-Type header
-            },
+            headers,
             body: JSON.stringify({
                 message: "Movie Updated Successfully",
                 matchedCount: result.matchedCount,
