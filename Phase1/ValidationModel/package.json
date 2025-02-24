@@ -14,6 +14,7 @@
     "@types/node": "^22.10.10"
   },
   "dependencies": {
-    "mongoose": "^8.9.5"
+    "mongoose": "^8.9.5",
+    "mongoose-double": "^0.0.1"
   }
 }

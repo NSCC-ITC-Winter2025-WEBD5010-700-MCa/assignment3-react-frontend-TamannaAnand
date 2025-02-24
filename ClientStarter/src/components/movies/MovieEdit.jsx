@@ -67,14 +67,13 @@ const MovieEdit = () => {
                 <input {...register('director')} type="text" placeholder="Director" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
             </div>
             <div>
-                {/* need to fix this check */}
                 <input {...register('release_year')} type="number" placeholder="Release Year" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
             </div>
             <div>
                 <input {...register('plot')} type="text" placeholder="Plot" className="w-full  word-wrap px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
             </div>
             <div>
-                <input {...register('rating')} type="number" placeholder="Rating" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <input {...register('rating')} type="number" step="0.01" placeholder="Rating" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
             </div>
             <div>
                 <input {...register('language')} type="text" placeholder="Language" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
