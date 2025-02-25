@@ -1,6 +1,6 @@
 {
   "C:\\Users\\Anand\\OneDrive\\Desktop\\Personal\\Course Work\\WEBD5010\\assignment3-react-frontend-TamannaAnand\\Phase1\\serverless.yml": {
-    "versionFramework": "4.6.4",
+    "versionFramework": "4.7.0",
     "servicePath": "C:\\Users\\Anand\\OneDrive\\Desktop\\Personal\\Course Work\\WEBD5010\\assignment3-react-frontend-TamannaAnand\\Phase1\\serverless.yml",
     "serviceConfigFileName": "serverless.yml",
     "service": {
@@ -15,7 +15,7 @@
         "httpApi": {
           "cors": {
             "allowedOrigins": [
-              "http://localhost:5173"
+              "*"
             ],
             "allowedMethods": [
               "GET",
@@ -149,7 +149,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-                  "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+                  "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
                 },
                 "Handler": "createItemFunction/index.handler",
                 "Runtime": "nodejs20.x",
@@ -177,7 +177,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-                  "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+                  "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
                 },
                 "Handler": "deleteItemFunction/index.handler",
                 "Runtime": "nodejs20.x",
@@ -205,7 +205,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-                  "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+                  "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
                 },
                 "Handler": "getAllItemsFunction/index.handler",
                 "Runtime": "nodejs20.x",
@@ -233,7 +233,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-                  "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+                  "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
                 },
                 "Handler": "getOneItemFunction/index.handler",
                 "Runtime": "nodejs20.x",
@@ -261,7 +261,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-                  "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+                  "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
                 },
                 "Handler": "updateItemFunction/index.handler",
                 "Runtime": "nodejs20.x",
@@ -284,54 +284,54 @@
                 "UpdateLogGroup"
               ]
             },
-            "CreateLambdaVersionVlutpPEWBb27Fxj4yG1TYTb0EY3Elg0wn3QYVyTTr4": {
+            "CreateLambdaVersionXBhbe0HJDKQL7SgAwsOZo9nxyPSWAHfzGNMoHMS9Dk": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "CreateLambdaFunction"
                 },
-                "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+                "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
               }
             },
-            "DeleteLambdaVersionZB2W3MHUH4aTKmLqCbad94w5e1QTk0CW4Bee3BRfnhg": {
+            "DeleteLambdaVersionSJktXu2tDVQeWaD4lKyej742rVUv03mL07kbwIZ38": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "DeleteLambdaFunction"
                 },
-                "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+                "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
               }
             },
-            "GetAllLambdaVersionOp196pMaYxmtQ54yffeWS0O4Qoh5eeTr9A7HXSojfU": {
+            "GetAllLambdaVersion7mpRrJuk6YxxldWmCG3xz4YxqjdR1rWqWjO9y5AEXXo": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "GetAllLambdaFunction"
                 },
-                "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+                "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
               }
             },
-            "GetOneLambdaVersionWTurVznbd6ySZFJl4Ap6CMpxHGgImOSvZAw1EMiQ": {
+            "GetOneLambdaVersion2C1uFHAPyyWGxVN0mUnHkIgRbDhWWtTa5q8KuweLIf8": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "GetOneLambdaFunction"
                 },
-                "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+                "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
               }
             },
-            "UpdateLambdaVersionSu1UDkJMXEN5w30Mm4LawDcK77GVOxpQX8vLAlRADg": {
+            "UpdateLambdaVersionVkdcAlNE9XnbJzWOFU0FjgGVHxNlfNLU6L4LIKuQrpQ": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "UpdateLambdaFunction"
                 },
-                "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+                "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
               }
             },
             "HttpApi": {
@@ -352,7 +352,7 @@
                     "OPTIONS"
                   ],
                   "AllowOrigins": [
-                    "http://localhost:5173"
+                    "*"
                   ]
                 }
               }
@@ -777,7 +777,7 @@
             "CreateLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "CreateLambdaVersionVlutpPEWBb27Fxj4yG1TYTb0EY3Elg0wn3QYVyTTr4"
+                "Ref": "CreateLambdaVersionXBhbe0HJDKQL7SgAwsOZo9nxyPSWAHfzGNMoHMS9Dk"
               },
               "Export": {
                 "Name": "sls-Phase1-dev-CreateLambdaFunctionQualifiedArn"
@@ -786,7 +786,7 @@
             "DeleteLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "DeleteLambdaVersionZB2W3MHUH4aTKmLqCbad94w5e1QTk0CW4Bee3BRfnhg"
+                "Ref": "DeleteLambdaVersionSJktXu2tDVQeWaD4lKyej742rVUv03mL07kbwIZ38"
               },
               "Export": {
                 "Name": "sls-Phase1-dev-DeleteLambdaFunctionQualifiedArn"
@@ -795,7 +795,7 @@
             "GetAllLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "GetAllLambdaVersionOp196pMaYxmtQ54yffeWS0O4Qoh5eeTr9A7HXSojfU"
+                "Ref": "GetAllLambdaVersion7mpRrJuk6YxxldWmCG3xz4YxqjdR1rWqWjO9y5AEXXo"
               },
               "Export": {
                 "Name": "sls-Phase1-dev-GetAllLambdaFunctionQualifiedArn"
@@ -804,7 +804,7 @@
             "GetOneLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "GetOneLambdaVersionWTurVznbd6ySZFJl4Ap6CMpxHGgImOSvZAw1EMiQ"
+                "Ref": "GetOneLambdaVersion2C1uFHAPyyWGxVN0mUnHkIgRbDhWWtTa5q8KuweLIf8"
               },
               "Export": {
                 "Name": "sls-Phase1-dev-GetOneLambdaFunctionQualifiedArn"
@@ -813,7 +813,7 @@
             "UpdateLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "UpdateLambdaVersionSu1UDkJMXEN5w30Mm4LawDcK77GVOxpQX8vLAlRADg"
+                "Ref": "UpdateLambdaVersionVkdcAlNE9XnbJzWOFU0FjgGVHxNlfNLU6L4LIKuQrpQ"
               },
               "Export": {
                 "Name": "sls-Phase1-dev-UpdateLambdaFunctionQualifiedArn"
@@ -876,7 +876,7 @@
           "timeout": 6,
           "runtime": "nodejs20.x",
           "vpc": {},
-          "versionLogicalId": "CreateLambdaVersionVlutpPEWBb27Fxj4yG1TYTb0EY3Elg0wn3QYVyTTr4"
+          "versionLogicalId": "CreateLambdaVersionXBhbe0HJDKQL7SgAwsOZo9nxyPSWAHfzGNMoHMS9Dk"
         },
         "delete": {
           "handler": "deleteItemFunction/index.handler",
@@ -896,7 +896,7 @@
           "timeout": 6,
           "runtime": "nodejs20.x",
           "vpc": {},
-          "versionLogicalId": "DeleteLambdaVersionZB2W3MHUH4aTKmLqCbad94w5e1QTk0CW4Bee3BRfnhg"
+          "versionLogicalId": "DeleteLambdaVersionSJktXu2tDVQeWaD4lKyej742rVUv03mL07kbwIZ38"
         },
         "getAll": {
           "handler": "getAllItemsFunction/index.handler",
@@ -916,7 +916,7 @@
           "timeout": 6,
           "runtime": "nodejs20.x",
           "vpc": {},
-          "versionLogicalId": "GetAllLambdaVersionOp196pMaYxmtQ54yffeWS0O4Qoh5eeTr9A7HXSojfU"
+          "versionLogicalId": "GetAllLambdaVersion7mpRrJuk6YxxldWmCG3xz4YxqjdR1rWqWjO9y5AEXXo"
         },
         "getOne": {
           "handler": "getOneItemFunction/index.handler",
@@ -936,7 +936,7 @@
           "timeout": 6,
           "runtime": "nodejs20.x",
           "vpc": {},
-          "versionLogicalId": "GetOneLambdaVersionWTurVznbd6ySZFJl4Ap6CMpxHGgImOSvZAw1EMiQ"
+          "versionLogicalId": "GetOneLambdaVersion2C1uFHAPyyWGxVN0mUnHkIgRbDhWWtTa5q8KuweLIf8"
         },
         "update": {
           "handler": "updateItemFunction/index.handler",
@@ -964,7 +964,7 @@
           "timeout": 6,
           "runtime": "nodejs20.x",
           "vpc": {},
-          "versionLogicalId": "UpdateLambdaVersionSu1UDkJMXEN5w30Mm4LawDcK77GVOxpQX8vLAlRADg"
+          "versionLogicalId": "UpdateLambdaVersionVkdcAlNE9XnbJzWOFU0FjgGVHxNlfNLU6L4LIKuQrpQ"
         }
       }
     },
@@ -977,7 +977,7 @@
       "httpApi": {
         "cors": {
           "allowedOrigins": [
-            "http://localhost:5173"
+            "*"
           ],
           "allowedMethods": [
             "GET",
@@ -1111,7 +1111,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-                "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+                "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
               },
               "Handler": "createItemFunction/index.handler",
               "Runtime": "nodejs20.x",
@@ -1139,7 +1139,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-                "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+                "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
               },
               "Handler": "deleteItemFunction/index.handler",
               "Runtime": "nodejs20.x",
@@ -1167,7 +1167,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-                "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+                "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
               },
               "Handler": "getAllItemsFunction/index.handler",
               "Runtime": "nodejs20.x",
@@ -1195,7 +1195,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-                "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+                "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
               },
               "Handler": "getOneItemFunction/index.handler",
               "Runtime": "nodejs20.x",
@@ -1223,7 +1223,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-                "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+                "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
               },
               "Handler": "updateItemFunction/index.handler",
               "Runtime": "nodejs20.x",
@@ -1246,54 +1246,54 @@
               "UpdateLogGroup"
             ]
           },
-          "CreateLambdaVersionVlutpPEWBb27Fxj4yG1TYTb0EY3Elg0wn3QYVyTTr4": {
+          "CreateLambdaVersionXBhbe0HJDKQL7SgAwsOZo9nxyPSWAHfzGNMoHMS9Dk": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CreateLambdaFunction"
               },
-              "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+              "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
             }
           },
-          "DeleteLambdaVersionZB2W3MHUH4aTKmLqCbad94w5e1QTk0CW4Bee3BRfnhg": {
+          "DeleteLambdaVersionSJktXu2tDVQeWaD4lKyej742rVUv03mL07kbwIZ38": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DeleteLambdaFunction"
               },
-              "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+              "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
             }
           },
-          "GetAllLambdaVersionOp196pMaYxmtQ54yffeWS0O4Qoh5eeTr9A7HXSojfU": {
+          "GetAllLambdaVersion7mpRrJuk6YxxldWmCG3xz4YxqjdR1rWqWjO9y5AEXXo": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetAllLambdaFunction"
               },
-              "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+              "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
             }
           },
-          "GetOneLambdaVersionWTurVznbd6ySZFJl4Ap6CMpxHGgImOSvZAw1EMiQ": {
+          "GetOneLambdaVersion2C1uFHAPyyWGxVN0mUnHkIgRbDhWWtTa5q8KuweLIf8": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetOneLambdaFunction"
               },
-              "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+              "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
             }
           },
-          "UpdateLambdaVersionSu1UDkJMXEN5w30Mm4LawDcK77GVOxpQX8vLAlRADg": {
+          "UpdateLambdaVersionVkdcAlNE9XnbJzWOFU0FjgGVHxNlfNLU6L4LIKuQrpQ": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "UpdateLambdaFunction"
               },
-              "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+              "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
             }
           },
           "HttpApi": {
@@ -1314,7 +1314,7 @@
                   "OPTIONS"
                 ],
                 "AllowOrigins": [
-                  "http://localhost:5173"
+                  "*"
                 ]
               }
             }
@@ -1739,7 +1739,7 @@
           "CreateLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CreateLambdaVersionVlutpPEWBb27Fxj4yG1TYTb0EY3Elg0wn3QYVyTTr4"
+              "Ref": "CreateLambdaVersionXBhbe0HJDKQL7SgAwsOZo9nxyPSWAHfzGNMoHMS9Dk"
             },
             "Export": {
               "Name": "sls-Phase1-dev-CreateLambdaFunctionQualifiedArn"
@@ -1748,7 +1748,7 @@
           "DeleteLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DeleteLambdaVersionZB2W3MHUH4aTKmLqCbad94w5e1QTk0CW4Bee3BRfnhg"
+              "Ref": "DeleteLambdaVersionSJktXu2tDVQeWaD4lKyej742rVUv03mL07kbwIZ38"
             },
             "Export": {
               "Name": "sls-Phase1-dev-DeleteLambdaFunctionQualifiedArn"
@@ -1757,7 +1757,7 @@
           "GetAllLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetAllLambdaVersionOp196pMaYxmtQ54yffeWS0O4Qoh5eeTr9A7HXSojfU"
+              "Ref": "GetAllLambdaVersion7mpRrJuk6YxxldWmCG3xz4YxqjdR1rWqWjO9y5AEXXo"
             },
             "Export": {
               "Name": "sls-Phase1-dev-GetAllLambdaFunctionQualifiedArn"
@@ -1766,7 +1766,7 @@
           "GetOneLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetOneLambdaVersionWTurVznbd6ySZFJl4Ap6CMpxHGgImOSvZAw1EMiQ"
+              "Ref": "GetOneLambdaVersion2C1uFHAPyyWGxVN0mUnHkIgRbDhWWtTa5q8KuweLIf8"
             },
             "Export": {
               "Name": "sls-Phase1-dev-GetOneLambdaFunctionQualifiedArn"
@@ -1775,7 +1775,7 @@
           "UpdateLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "UpdateLambdaVersionSu1UDkJMXEN5w30Mm4LawDcK77GVOxpQX8vLAlRADg"
+              "Ref": "UpdateLambdaVersionVkdcAlNE9XnbJzWOFU0FjgGVHxNlfNLU6L4LIKuQrpQ"
             },
             "Export": {
               "Name": "sls-Phase1-dev-UpdateLambdaFunctionQualifiedArn"
@@ -1828,7 +1828,7 @@
       "serviceProvider": null,
       "instanceParameters": null
     },
-    "serviceRawFile": "org: nscc123 # The Serverless org ID (org in the Serverless Framework)\r\nservice: Phase1 # The service name (project name)\r\n\r\nprovider:\r\n  name: aws # Provider is AWS\r\n  runtime: nodejs20.x # Runtime environment for Lambda functions\r\n  environment:\r\n    MONGODB_URI: mongodb+srv://anandtamanna9:wgLz8akLFmxyqpBw@cluster0.xuga9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0\r\n  httpApi:\r\n    cors:\r\n      allowedOrigins:\r\n        - http://localhost:5173\r\n      allowedMethods:\r\n        - GET\r\n        - POST\r\n        - DELETE\r\n        - PATCH\r\n        - OPTIONS\r\n      allowedHeaders:\r\n        - '*'\r\n\r\nfunctions:\r\n  create:\r\n    handler: createItemFunction/index.handler # Path to 'create' function handler\r\n    events:\r\n      - httpApi: # Define HTTP API event for the 'create' function\r\n          path: /create\r\n          method: post\r\n\r\n  delete:\r\n    handler: deleteItemFunction/index.handler # Path to 'delete' function handler\r\n    events:\r\n      - httpApi: # Define HTTP API event for the 'delete' function\r\n          path: /delete\r\n          method: delete\r\n\r\n  getAll:\r\n    handler: getAllItemsFunction/index.handler # Path to 'getAll' function handler\r\n    events:\r\n      - httpApi: # Define HTTP API event for the 'getAll' function\r\n          path: /get\r\n          method: get\r\n\r\n  getOne:\r\n    handler: getOneItemFunction/index.handler # Path to 'getOne' function handler\r\n    events:\r\n      - httpApi: # Define HTTP API event for the 'getOne' function\r\n          path: /getOne\r\n          method: get\r\n\r\n  update:\r\n    handler: updateItemFunction/index.handler # Path to 'update' function handler\r\n    events:\r\n      - httpApi: # Define HTTP API event for the 'update' function\r\n          path: /update\r\n          method: patch\r\n      - httpApi:  # ✅ Explicitly define OPTIONS for CORS preflight\r\n          path: /update\r\n          method: options",
+    "serviceRawFile": "org: nscc123 # The Serverless org ID (org in the Serverless Framework)\r\nservice: Phase1 # The service name (project name)\r\n\r\nprovider:\r\n  name: aws # Provider is AWS\r\n  runtime: nodejs20.x # Runtime environment for Lambda functions\r\n  environment:\r\n    MONGODB_URI: mongodb+srv://anandtamanna9:wgLz8akLFmxyqpBw@cluster0.xuga9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0\r\n  httpApi:\r\n    cors:\r\n      allowedOrigins:\r\n        - '*'\r\n      allowedMethods:\r\n        - GET\r\n        - POST\r\n        - DELETE\r\n        - PATCH\r\n        - OPTIONS\r\n      allowedHeaders:\r\n        - '*'\r\n\r\nfunctions:\r\n  create:\r\n    handler: createItemFunction/index.handler # Path to 'create' function handler\r\n    events:\r\n      - httpApi: # Define HTTP API event for the 'create' function\r\n          path: /create\r\n          method: post\r\n\r\n  delete:\r\n    handler: deleteItemFunction/index.handler # Path to 'delete' function handler\r\n    events:\r\n      - httpApi: # Define HTTP API event for the 'delete' function\r\n          path: /delete\r\n          method: delete\r\n\r\n  getAll:\r\n    handler: getAllItemsFunction/index.handler # Path to 'getAll' function handler\r\n    events:\r\n      - httpApi: # Define HTTP API event for the 'getAll' function\r\n          path: /get\r\n          method: get\r\n\r\n  getOne:\r\n    handler: getOneItemFunction/index.handler # Path to 'getOne' function handler\r\n    events:\r\n      - httpApi: # Define HTTP API event for the 'getOne' function\r\n          path: /getOne\r\n          method: get\r\n\r\n  update:\r\n    handler: updateItemFunction/index.handler # Path to 'update' function handler\r\n    events:\r\n      - httpApi: # Define HTTP API event for the 'update' function\r\n          path: /update\r\n          method: patch\r\n      - httpApi:  # ✅ Explicitly define OPTIONS for CORS preflight\r\n          path: /update\r\n          method: options",
     "command": [
       "deploy"
     ],
@@ -1841,36 +1841,36 @@
     "serviceProviderAwsCfStackName": "Phase1-dev",
     "serviceProviderAwsCfStackId": "arn:aws:cloudformation:us-east-1:156041424992:stack/Phase1-dev/9eb03320-da6e-11ef-9619-0afffd03a6d5",
     "serviceProviderAwsCfStackCreated": "2025-01-24T16:16:51.648Z",
-    "serviceProviderAwsCfStackUpdated": "2025-02-24T18:28:57.393Z",
+    "serviceProviderAwsCfStackUpdated": "2025-02-25T16:35:31.091Z",
     "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
         "OutputKey": "GetOneLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:us-east-1:156041424992:function:Phase1-dev-getOne:40",
+        "OutputValue": "arn:aws:lambda:us-east-1:156041424992:function:Phase1-dev-getOne:45",
         "Description": "Current Lambda function version",
         "ExportName": "sls-Phase1-dev-GetOneLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "GetAllLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:us-east-1:156041424992:function:Phase1-dev-getAll:40",
+        "OutputValue": "arn:aws:lambda:us-east-1:156041424992:function:Phase1-dev-getAll:45",
         "Description": "Current Lambda function version",
         "ExportName": "sls-Phase1-dev-GetAllLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "DeleteLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:us-east-1:156041424992:function:Phase1-dev-delete:56",
+        "OutputValue": "arn:aws:lambda:us-east-1:156041424992:function:Phase1-dev-delete:61",
         "Description": "Current Lambda function version",
         "ExportName": "sls-Phase1-dev-DeleteLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "CreateLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:us-east-1:156041424992:function:Phase1-dev-create:56",
+        "OutputValue": "arn:aws:lambda:us-east-1:156041424992:function:Phase1-dev-create:61",
         "Description": "Current Lambda function version",
         "ExportName": "sls-Phase1-dev-CreateLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "UpdateLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:us-east-1:156041424992:function:Phase1-dev-update:56",
+        "OutputValue": "arn:aws:lambda:us-east-1:156041424992:function:Phase1-dev-update:61",
         "Description": "Current Lambda function version",
         "ExportName": "sls-Phase1-dev-UpdateLambdaFunctionQualifiedArn"
       },
@@ -2009,7 +2009,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-              "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+              "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
             },
             "Handler": "createItemFunction/index.handler",
             "Runtime": "nodejs20.x",
@@ -2037,7 +2037,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-              "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+              "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
             },
             "Handler": "deleteItemFunction/index.handler",
             "Runtime": "nodejs20.x",
@@ -2065,7 +2065,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-              "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+              "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
             },
             "Handler": "getAllItemsFunction/index.handler",
             "Runtime": "nodejs20.x",
@@ -2093,7 +2093,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-              "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+              "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
             },
             "Handler": "getOneItemFunction/index.handler",
             "Runtime": "nodejs20.x",
@@ -2121,7 +2121,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-us-east-1-ebf1a3db-45cb",
-              "S3Key": "serverless/Phase1/dev/1740422379057-2025-02-24T18:39:39.057Z/Phase1.zip"
+              "S3Key": "serverless/Phase1/dev/1740501496611-2025-02-25T16:38:16.611Z/Phase1.zip"
             },
             "Handler": "updateItemFunction/index.handler",
             "Runtime": "nodejs20.x",
@@ -2144,54 +2144,54 @@
             "UpdateLogGroup"
           ]
         },
-        "CreateLambdaVersionVlutpPEWBb27Fxj4yG1TYTb0EY3Elg0wn3QYVyTTr4": {
+        "CreateLambdaVersionXBhbe0HJDKQL7SgAwsOZo9nxyPSWAHfzGNMoHMS9Dk": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "CreateLambdaFunction"
             },
-            "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+            "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
           }
         },
-        "DeleteLambdaVersionZB2W3MHUH4aTKmLqCbad94w5e1QTk0CW4Bee3BRfnhg": {
+        "DeleteLambdaVersionSJktXu2tDVQeWaD4lKyej742rVUv03mL07kbwIZ38": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "DeleteLambdaFunction"
             },
-            "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+            "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
           }
         },
-        "GetAllLambdaVersionOp196pMaYxmtQ54yffeWS0O4Qoh5eeTr9A7HXSojfU": {
+        "GetAllLambdaVersion7mpRrJuk6YxxldWmCG3xz4YxqjdR1rWqWjO9y5AEXXo": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "GetAllLambdaFunction"
             },
-            "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+            "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
           }
         },
-        "GetOneLambdaVersionWTurVznbd6ySZFJl4Ap6CMpxHGgImOSvZAw1EMiQ": {
+        "GetOneLambdaVersion2C1uFHAPyyWGxVN0mUnHkIgRbDhWWtTa5q8KuweLIf8": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "GetOneLambdaFunction"
             },
-            "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+            "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
           }
         },
-        "UpdateLambdaVersionSu1UDkJMXEN5w30Mm4LawDcK77GVOxpQX8vLAlRADg": {
+        "UpdateLambdaVersionVkdcAlNE9XnbJzWOFU0FjgGVHxNlfNLU6L4LIKuQrpQ": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "UpdateLambdaFunction"
             },
-            "CodeSha256": "Aype5b0Q4ExsZUfzXQ1Rfwqohglz+kTKUY3GmfKhsoI="
+            "CodeSha256": "WuVIvTVNwn9s7XjmBWj2J0j0tuZYuei3J/u+rWHB3vU="
           }
         },
         "HttpApi": {
@@ -2211,7 +2211,7 @@
                 "OPTIONS"
               ],
               "AllowOrigins": [
-                "http://localhost:5173"
+                "*"
               ]
             }
           }
@@ -2636,7 +2636,7 @@
         "CreateLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "CreateLambdaVersionVlutpPEWBb27Fxj4yG1TYTb0EY3Elg0wn3QYVyTTr4"
+            "Ref": "CreateLambdaVersionXBhbe0HJDKQL7SgAwsOZo9nxyPSWAHfzGNMoHMS9Dk"
           },
           "Export": {
             "Name": "sls-Phase1-dev-CreateLambdaFunctionQualifiedArn"
@@ -2645,7 +2645,7 @@
         "DeleteLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "DeleteLambdaVersionZB2W3MHUH4aTKmLqCbad94w5e1QTk0CW4Bee3BRfnhg"
+            "Ref": "DeleteLambdaVersionSJktXu2tDVQeWaD4lKyej742rVUv03mL07kbwIZ38"
           },
           "Export": {
             "Name": "sls-Phase1-dev-DeleteLambdaFunctionQualifiedArn"
@@ -2654,7 +2654,7 @@
         "GetAllLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "GetAllLambdaVersionOp196pMaYxmtQ54yffeWS0O4Qoh5eeTr9A7HXSojfU"
+            "Ref": "GetAllLambdaVersion7mpRrJuk6YxxldWmCG3xz4YxqjdR1rWqWjO9y5AEXXo"
           },
           "Export": {
             "Name": "sls-Phase1-dev-GetAllLambdaFunctionQualifiedArn"
@@ -2663,7 +2663,7 @@
         "GetOneLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "GetOneLambdaVersionWTurVznbd6ySZFJl4Ap6CMpxHGgImOSvZAw1EMiQ"
+            "Ref": "GetOneLambdaVersion2C1uFHAPyyWGxVN0mUnHkIgRbDhWWtTa5q8KuweLIf8"
           },
           "Export": {
             "Name": "sls-Phase1-dev-GetOneLambdaFunctionQualifiedArn"
@@ -2672,7 +2672,7 @@
         "UpdateLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "UpdateLambdaVersionSu1UDkJMXEN5w30Mm4LawDcK77GVOxpQX8vLAlRADg"
+            "Ref": "UpdateLambdaVersionVkdcAlNE9XnbJzWOFU0FjgGVHxNlfNLU6L4LIKuQrpQ"
           },
           "Export": {
             "Name": "sls-Phase1-dev-UpdateLambdaFunctionQualifiedArn"

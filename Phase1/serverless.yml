@@ -9,7 +9,7 @@ provider:
   httpApi:
     cors:
       allowedOrigins:
-        - http://localhost:5173
+        - '*'
       allowedMethods:
         - GET
         - POST
