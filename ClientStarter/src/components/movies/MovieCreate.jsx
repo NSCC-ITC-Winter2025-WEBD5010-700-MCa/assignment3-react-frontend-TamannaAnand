@@ -17,7 +17,7 @@ function MovieCreate() {
 
     const createMovieMutation = useMutation({
         mutationFn: async (data) => {
-            const response = await fetch(`https://36sjcqdtk5.execute-api.us-east-1.amazonaws.com/create`, {
+            const response = await fetch(`${import.meta.env.VITE_MOVIES_API_URL}create`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)

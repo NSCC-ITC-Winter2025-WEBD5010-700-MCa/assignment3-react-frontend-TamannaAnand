@@ -2,6 +2,7 @@ import { useQuery } from '@tanstack/react-query'
 import MoviesTable from '../components/movies/MoviesTable';
 import { Outlet, useLocation } from 'react-router-dom'
 
+
 const Movies = () => {
 
     const location = useLocation()//get location info 
@@ -9,7 +10,7 @@ const Movies = () => {
     const { isPending, error, data: movies } = useQuery({
         queryKey: ['moviesData'],
         queryFn: async () => {
-            const response = await fetch('https://36sjcqdtk5.execute-api.us-east-1.amazonaws.com/get')
+            const response = await fetch(`${import.meta.env.VITE_MOVIES_API_URL}get`)
             return response.json()
         },
         staleTime: Infinity

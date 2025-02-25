@@ -10,7 +10,7 @@ const MoviesTable = ({ movies }) => {
 
     const deleteMovieMutation = useMutation({
         mutationFn: async (movieId) => {
-            const response = await fetch(`https://36sjcqdtk5.execute-api.us-east-1.amazonaws.com/delete?id=${movieId}`, {
+            const response = await fetch(`${import.meta.env.VITE_MOVIES_API_URL}delete?id=${movieId}`, {
                 method: 'DELETE'
             })
             return response.json()

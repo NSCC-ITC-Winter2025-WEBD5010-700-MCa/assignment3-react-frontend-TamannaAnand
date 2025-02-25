@@ -34,7 +34,7 @@ const MovieEdit = () => {
 
     const editMovieMutation = useMutation({
         mutationFn: async (formData) => {
-            const response = await fetch(`https://36sjcqdtk5.execute-api.us-east-1.amazonaws.com/update?id=${id}`, {
+            const response = await fetch(`${import.meta.env.VITE_MOVIES_API_URL}update?id=${id}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
