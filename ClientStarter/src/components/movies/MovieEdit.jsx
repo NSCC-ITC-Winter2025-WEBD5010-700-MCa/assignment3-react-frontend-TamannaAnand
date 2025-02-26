@@ -28,7 +28,8 @@ const MovieEdit = () => {
             setValue('rating', data.rating)
             setValue('language', data.language)
             setValue('runtime', data.runtime)
-            setValue('production_company', data.production_company)
+            setValue('production_company', data.production_company),
+            setValue('awards', data.awards)
         }
     }, [data])
 
@@ -83,6 +84,9 @@ const MovieEdit = () => {
             </div>
             <div>
                 <input {...register('production_company')} type="text" placeholder="Production Company" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+            <div>
+                <input {...register('awards')} type="text" placeholder="Awards" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
             </div>
 
             <button type="submit" className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-all"> Edit Movie </button>
