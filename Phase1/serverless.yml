@@ -1,5 +1,7 @@
 org: nscc123 # The Serverless org ID (org in the Serverless Framework)
 service: Phase1 # The service name (project name)
+plugins:
+  - serverless-offline
 
 provider:
   name: aws # Provider is AWS
