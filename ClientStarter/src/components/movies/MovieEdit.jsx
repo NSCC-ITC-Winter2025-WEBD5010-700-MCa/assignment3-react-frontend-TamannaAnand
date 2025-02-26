@@ -21,15 +21,15 @@ const MovieEdit = () => {
     useEffect(() => {
         if(data) {
             setValue('title', data.title)
-            setValue('genre', data.genre)
+            setValue('genre', Array.isArray(data.genre) ? data.genre.join(', ') : data.genre || 'N/A')
             setValue('director', data.director)
             setValue('release_year', data.release_year)
             setValue('plot', data.plot)
             setValue('rating', data.rating)
             setValue('language', data.language)
             setValue('runtime', data.runtime)
-            setValue('production_company', data.production_company),
-            setValue('awards', data.awards)
+            setValue('production_company', data.production_company || 'N/A'),
+            setValue('awards', Array.isArray(data.awards) ? data.awards.map(award => `${award.award} (${award.year})`).join(', ') : 'N/A')
         }
     }, [data])
 
